@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Booru to SD WebUI Extractor",
+  "version": "1.1",
+  "description": "Extracts tags from Rule34 & Gelbooru and formats them for Pony V6 or Animagine XL 4.0",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "*://*.rule34.xxx/*",
+    "*://*.gelbooru.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
